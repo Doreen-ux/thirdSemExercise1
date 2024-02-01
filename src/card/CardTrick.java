@@ -77,26 +77,21 @@ public class CardTrick
             c.setValue(c.randomValue());
             c.setSuit(Card.SUITS[c.randomSuit()]);
             DoreensmagicHand[i] = c;
-        }
-        
-        
-        /*
+        }   
         //Add a hard-coded lucky card
         Card luckyCard = new Card();
         luckyCard.setValue(9);
         luckyCard.setSuit("Diamonds");
-        */
-        
-       
+            
         // Print the cards in magicHand
         for (Card DoreensmagicHand1 : DoreensmagicHand) {
             System.out.println((DoreensmagicHand1.getSuit() + " " + DoreensmagicHand1.getValue()));
         }
         
-        /*GIT
+        
         //printing lucky card   
         System.out.println("Your Lucky Card: " + luckyCard.getSuit() + " " + luckyCard.getValue());
-       */
+       
         // Ask the user for a card
         System.out.println("Enter a card value(1-13):");
         int value = input.nextInt();
@@ -117,15 +112,11 @@ public class CardTrick
             }
         }
         
-        /*   GIT
         // Hard coded-lucky card  
        if (!gotten && value == luckyCard.getValue() && suit == luckyCard.getSuitIndex())
         {
              gotten = true;
-        }
- */
-        
-        
+        }  
         // Report the result
         if (gotten) 
         {
